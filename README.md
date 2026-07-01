@@ -228,6 +228,8 @@ Please consider giving it a **Star** on GitHub.
 
 It helps the project reach more Delphi developers and encourages future improvements.
 
+---
+
 ## 🎯 Project Goals
 
 This project is more than a color theme.
