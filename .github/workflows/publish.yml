@@ -1,0 +1,61 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm compile
+
+      - run: pnpm test
+
+      - name: Bump patch version
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          BEFORE=$(node -p "require('./package.json').version")
+          npm version patch --no-git-tag-version
+          AFTER=$(node -p "require('./package.json').version")
+          echo "NEW_VERSION=${AFTER}" >> $GITHUB_ENV
+          echo "Bumped version from ${BEFORE} to ${AFTER}"
+
+      - run: pnpm package
+
+      - name: Publish to VS Code Marketplace
+        run: npx @vscode/vsce publish --packagePath $(find . -maxdepth 1 -name "*.vsix" | head -1)
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: Publish to Open VSX Registry
+        run: npx ovsx publish $(find . -maxdepth 1 -name "*.vsix" | head -1)
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+
+      - name: Commit bumped version and tag
+        run: |
+          git add package.json
+          git commit -m "chore: bump version to v${NEW_VERSION} [skip ci]"
+          git tag "v${NEW_VERSION}"
+          git push origin main --tags

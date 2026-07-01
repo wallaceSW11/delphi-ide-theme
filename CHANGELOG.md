@@ -1,12 +1,24 @@
 # Changelog
 
-## 1.0.0
+All notable changes to this project will be documented in this file.
 
-- Initial release
-- Delphi IDE Dark theme with faithful Delphi 11 CNPack color scheme
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [1.0.0] - 2026-07-01
+
+### Added
+
+- Delphi IDE Dark theme with faithful recreation of the Delphi IDE color palette
 - Delphi IDE Light theme
-- Semantic highlighting for type declarations (`class`, `record`, `interface`, `end`)
-- 6-level structural highlighting for block keywords (`begin`, `end`, `if`, `for`, `while`, `case`, `try`, etc.)
-- Comment punctuation colored as comments (`//`, `{`, `}`, `(*`, `*)`)
-- Support for Pascal and Object Pascal languages
-- Compatible with VS Code 1.75+ and Kiro IDE
+- CNPack-inspired 6-level structural highlighting via Semantic Tokens
+- Complete Delphi syntax validation suite (`Everything.pas`)
+- Dark and Light screenshots comparison (Delphi vs VS Code)
+- Specification-driven documentation (color-spec.md, token-map.json)
+- CI pipeline (build + test on PRs)
+- Publish pipeline with auto-bump on merge to main (VS Code Marketplace + Open VSX)
+
+[Unreleased]: https://github.com/wallacesw11/delphi-ide-theme/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/wallacesw11/delphi-ide-theme/releases/tag/v1.0.0
