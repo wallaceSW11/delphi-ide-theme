@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "deepseek/deepseek-v4-pro",
+  "default_agent": "main",
+  "instructions": ["AGENTS.md"],
+  "permission": {
+    "bash": {
+      "git *": "deny",
+      "*": "allow"
+    },
+    "edit": "allow",
+    "read": "allow",
+    "glob": "allow",
+    "grep": "allow",
+    "task": "allow",
+    "question": "allow",
+    "webfetch": "allow",
+    "skill": "allow",
+    "todowrite": "allow"
+  }
+}

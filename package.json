@@ -1,0 +1,65 @@
+{
+    "name": "delphi-ide-theme",
+    "displayName": "Delphi IDE Theme",
+    "description": "A faithful recreation of the Delphi IDE appearance for VS Code",
+    "version": "1.0.0",
+    "publisher": "wallaceferreira",
+    "license": "MIT",
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "delphi",
+        "pascal",
+        "objectpascal",
+        "theme",
+        "color-theme",
+        "dark",
+        "light"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wallacesw11/delphi-ide-theme"
+    },
+    "bugs": {
+        "url": "https://github.com/wallacesw11/delphi-ide-theme/issues"
+    },
+    "homepage": "https://github.com/wallacesw11/delphi-ide-theme#readme",
+    "main": "./out/extension.js",
+    "activationEvents": [
+        "onLanguage:pascal",
+        "onLanguage:objectpascal"
+    ],
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "package": "vsce package --no-dependencies --allow-missing-repository",
+        "test": "vitest run",
+        "test:watch": "vitest"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Delphi IDE Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/delphi-dark-color-theme.json"
+            },
+            {
+                "label": "Delphi IDE Light",
+                "uiTheme": "vs",
+                "path": "./themes/delphi-light-color-theme.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.75.0",
+        "@vscode/vsce": "^3.0.0",
+        "typescript": "^5.7.0",
+        "vitest": "^3.0.0"
+    }
+}

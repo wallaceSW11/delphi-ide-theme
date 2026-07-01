@@ -1,0 +1,90 @@
+// Resource file for Delphi 11 Theme sample project
+
+#define COMPANY_NAME "Acme Corp"
+#define APP_VERSION  "1.0.0"
+#define APP_YEAR     "2026"
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEFLAGSMASK   0x3F
+FILEFLAGS       0x0
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     0x0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName",    COMPANY_NAME
+      VALUE "FileDescription", "Sample Application for Delphi 11 Theme"
+      VALUE "FileVersion",     APP_VERSION
+      VALUE "InternalName",    "sample_app"
+      VALUE "LegalCopyright",  "Copyright (c) " APP_YEAR " " COMPANY_NAME
+      VALUE "OriginalFilename","sample_app.exe"
+      VALUE "ProductName",     "Delphi 11 Theme Sample"
+      VALUE "ProductVersion",  APP_VERSION
+    END
+  END
+
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 1252
+  END
+END
+
+ICON_MAIN       ICON    "favicon.ico"
+LOGO_BMP        BITMAP  "logo.bmp"
+CURSOR_HAND     CURSOR  "hand.cur"
+
+STRINGTABLE
+BEGIN
+  1001  "File"
+  1002  "Edit"
+  1003  "View"
+  1004  "Help"
+  1101  "New"
+  1102  "Open"
+  1103  "Save"
+  1104  "Exit"
+  1201  "Cut"
+  1202  "Copy"
+  1203  "Paste"
+  1301  "About"
+END
+
+DLG_MAIN DIALOGEX 0, 0, 400, 300
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sample Dialog"
+FONT 8, "MS Shell Dlg", 0, 1
+BEGIN
+  LTEXT           "Welcome to the Sample Application", IDC_STATIC, 10, 10, 380, 20
+  EDITTEXT        101, 10, 40, 380, 200, ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+  DEFPUSHBUTTON   "OK", IDOK, 150, 260, 50, 14
+  PUSHBUTTON      "Cancel", IDCANCEL, 210, 260, 50, 14
+END
+
+MENU_MAIN MENU
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&New\tCtrl+N",       1101
+    MENUITEM "&Open\tCtrl+O",      1102
+    MENUITEM "&Save\tCtrl+S",      1103
+    MENUITEM SEPARATOR
+    MENUITEM "E&xit\tAlt+F4",      1104
+  END
+
+  POPUP "&Edit"
+  BEGIN
+    MENUITEM "&Cut\tCtrl+X",       1201
+    MENUITEM "&Copy\tCtrl+C",      1202
+    MENUITEM "&Paste\tCtrl+V",     1203
+  END
+
+  POPUP "&Help"
+  BEGIN
+    MENUITEM "&About\tF1",         1301
+  END
+END

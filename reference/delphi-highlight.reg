@@ -1,0 +1,383 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight]
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Additional search match highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00774B35"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Assembler]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00D0E3F0"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Attribute Names]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Attribute Values]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Binary]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Brace Highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clSilver"
+"Background Color New"="$00C04040"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Character]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Code folding tree]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Comment]
+"Bold"="False"
+"Italic"="True"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$0084E7BC"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Diff addition]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clNavy"
+"Background Color New"="clYellow"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Diff deletion]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clNavy"
+"Background Color New"="clRed"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Diff move]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clNavy"
+"Background Color New"="clBlue"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Disabled break]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00CCE2EE"
+"Background Color New"="$005A5A5A"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Enabled break]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00FD7373"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Error line]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$00324CCB"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Execution point]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00508AB1"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Float]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Folded code]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Hex]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Hot Link]
+"Bold"="False"
+"Italic"="False"
+"Underline"="True"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FF7F2A"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Identifier]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00F0F9FF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Illegal Char]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clRed"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Invalid break]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00CCE2EE"
+"Background Color New"="$005A5A5A"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Line Highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="True"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$001C1509"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Line Number]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Marked block]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00FFAA7F"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Modified line]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clLime"
+"Background Color New"="clYellow"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Number]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Octal]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Plain text]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Preprocessor]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFCD66"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Reserved word]
+"Bold"="True"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00BCE0FF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Right margin]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clSilver"
+"Background Color New"="$001C1509"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Scripts]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clRed"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Search match]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00FFAA7F"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\String]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFAA7F"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Structural Highlighting]
+"Enabled"="True"
+"Color1"="$00868686"
+"Color2"="$00B2783D"
+"Color3"="$007D9F4D"
+"Color4"="$009F528A"
+"FlowControlEnabled"="True"
+"FlowControlLocation"="1"
+"ShowSingleLine"="True"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Symbol]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00F0F9FF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Sync edit background]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="True"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00473B35"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Sync edit highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00774B35"
+"Background Color New"="clWhite"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Tags]
+"Bold"="True"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00BCE0FF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\23.0\Editor\Highlight\Whitespace]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+

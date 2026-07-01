@@ -1,0 +1,114 @@
+{
+    "Reserved word": {
+        "scopes": [
+            "keyword.control",
+            "keyword.other",
+            "storage.type",
+            "storage.modifier",
+            "constant.language"
+        ],
+        "rationale": "Delphi uses bold for all reserved words (begin, end, if, for, class, procedure, etc.). TextMate splits these across keyword.control (flow control), keyword.other (misc keywords), storage.type (type declarations), storage.modifier (visibility), and constant.language (true/false/nil)."
+    },
+    "Tags": {
+        "scopes": [
+            "entity.name.tag",
+            "entity.name.tag.pascal"
+        ],
+        "rationale": "Delphi XML documentation tags (<summary>, <param>, <returns>) share the same bold color as reserved words. entity.name.tag covers XML doc comment tags."
+    },
+    "Comment": {
+        "scopes": [
+            "comment.line",
+            "comment.block",
+            "comment.block.documentation"
+        ],
+        "rationale": "All comment forms (//, {}, (**), and XML doc comments) use italic green in Delphi. comment.line covers // comments, comment.block covers {} and (**), comment.block.documentation covers XML doc comments."
+    },
+    "String": {
+        "scopes": [
+            "string.quoted.single",
+            "string.quoted.double"
+        ],
+        "rationale": "Delphi strings use blue (#7FAAFF). Single-quoted strings are standard; double-quoted strings are used in some contexts (SQL, JSON literals)."
+    },
+    "Number": {
+        "scopes": [
+            "constant.numeric"
+        ],
+        "rationale": "All numeric literals (integer, float, hex, binary, octal) share magenta (#FF7FAA) in Delphi. constant.numeric is the umbrella scope for all number formats."
+    },
+    "Character": {
+        "scopes": [
+            "constant.character"
+        ],
+        "rationale": "Delphi character literals (#65, ^M) share the same magenta as numbers."
+    },
+    "Identifier": {
+        "scopes": [
+            "variable.other",
+            "variable.parameter",
+            "entity.name.function",
+            "entity.name.type",
+            "support.type",
+            "support.class",
+            "support.constant"
+        ],
+        "rationale": "Delphi uses near-white (#FFF9F0) for all identifiers: variables, parameters, function/procedure names, type names, built-in types, and compiler constants. All these scopes represent named entities that are not reserved words."
+    },
+    "Symbol": {
+        "scopes": [
+            "keyword.operator",
+            "punctuation",
+            "punctuation.terminator",
+            "punctuation.separator"
+        ],
+        "rationale": "Delphi colors operators and punctuation the same near-white (#FFF9F0) as identifiers. Covers arithmetic, comparison, assignment operators, and punctuation characters."
+    },
+    "Preprocessor": {
+        "scopes": [
+            "keyword.control.directive",
+            "meta.preprocessor"
+        ],
+        "rationale": "Delphi compiler directives ({$IFDEF}, {$R}, {$APPTYPE}) use a distinct gold (#66CDFF). keyword.control.directive covers the directive keyword itself; meta.preprocessor covers the entire directive block."
+    },
+    "Assembler": {
+        "scopes": [
+            "source.asm",
+            "meta.embedded.asm"
+        ],
+        "rationale": "Delphi colors inline assembly blocks (asm...end) in a desaturated yellow (#F0E3D0). source.asm matches standalone assembly; meta.embedded.asm matches embedded asm in Pascal source."
+    },
+    "Attribute Names": {
+        "scopes": [
+            "support.attribute",
+            "punctuation.definition.annotation"
+        ],
+        "rationale": "Delphi attributes ([CustomAttr]) use pure white (#FFFFFF). support.attribute covers the attribute name; punctuation.definition.annotation covers the brackets."
+    },
+    "Attribute Values": {
+        "scopes": [
+            "support.attribute",
+            "meta.attribute"
+        ],
+        "rationale": "Delphi attribute values share the same pure white as attribute names."
+    },
+    "Hot Link": {
+        "scopes": [
+            "markup.underline.link"
+        ],
+        "rationale": "Delphi underlined orange (#2A7FFF) for clickable links in comments. markup.underline.link is the standard TextMate scope for underlined links."
+    },
+    "Illegal Char": {
+        "scopes": [
+            "invalid.illegal"
+        ],
+        "rationale": "Delphi uses red (#FF0000) for illegal/invalid characters. invalid.illegal is the standard TextMate scope for syntax errors."
+    },
+    "Scripts": {
+        "scopes": [
+            "meta.script",
+            "source.script"
+        ],
+        "rationale": "Delphi embedded scripts (script blocks) use red (#FF0000). This covers scripting contexts within Pascal source."
+    }
+}

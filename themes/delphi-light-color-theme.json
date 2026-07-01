@@ -1,0 +1,270 @@
+{
+    "name": "Delphi IDE Light",
+    "type": "light",
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "type": {
+            "foreground": "#CC0000",
+            "bold": true
+        },
+        "keyword.depth1": {
+            "foreground": "#CC0000",
+            "bold": true
+        },
+        "keyword.depth2": {
+            "foreground": "#CC6600",
+            "bold": true
+        },
+        "keyword.depth3": {
+            "foreground": "#339933",
+            "bold": true
+        },
+        "keyword.depth4": {
+            "foreground": "#009999",
+            "bold": true
+        },
+        "keyword.depth5": {
+            "foreground": "#3366CC",
+            "bold": true
+        },
+        "keyword.depth6": {
+            "foreground": "#993399",
+            "bold": true
+        }
+    },
+    "colors": {
+        "editor.background": "#FAFAFA",
+        "editor.foreground": "#1A1A1A",
+        "editor.lineHighlightBackground": "#E8E8E8",
+        "editor.selectionBackground": "#B4D5FE",
+        "editor.selectionForeground": "#1A1A1A",
+        "editor.inactiveSelectionBackground": "#D4D4D480",
+        "editor.findMatchBackground": "#FFCC80",
+        "editor.findMatchForeground": "#1A1A1A",
+        "editor.findMatchHighlightBackground": "#FFF3CD80",
+        "editor.findMatchHighlightForeground": "#1A1A1ACC",
+        "editorBracketMatch.background": "#D4D4D4",
+        "editorBracketMatch.border": "#999999",
+        "editorCursor.foreground": "#1A1A1A",
+        "editorWhitespace.foreground": "#CCCCCC",
+        "editorLineNumber.foreground": "#999999",
+        "editorLineNumber.activeForeground": "#1A1A1A",
+        "editorGutter.background": "#FAFAFA",
+        "editor.foldBackground": "#E8E8E880",
+        "editorOverviewRuler.border": "#D4D4D4",
+        "editorRuler.foreground": "#D4D4D4",
+        "editorError.foreground": "#CC0000",
+        "editorWarning.foreground": "#CC8800",
+        "editorInfo.foreground": "#0066CC",
+        "editorHint.foreground": "#339933",
+        "activityBar.background": "#F0F0F0",
+        "activityBar.foreground": "#1A1A1A",
+        "activityBar.inactiveForeground": "#999999",
+        "activityBar.border": "#D4D4D4",
+        "activityBarBadge.background": "#0066CC",
+        "activityBarBadge.foreground": "#FFFFFF",
+        "sideBar.background": "#F0F0F0",
+        "sideBar.foreground": "#1A1A1A",
+        "sideBar.border": "#D4D4D4",
+        "sideBarTitle.foreground": "#1A1A1A",
+        "sideBarSectionHeader.background": "#E8E8E8",
+        "sideBarSectionHeader.foreground": "#1A1A1A",
+        "list.activeSelectionBackground": "#D4D4D4",
+        "list.activeSelectionForeground": "#1A1A1A",
+        "list.inactiveSelectionBackground": "#E8E8E8",
+        "list.hoverBackground": "#E8E8E8",
+        "list.focusBackground": "#E8E8E8",
+        "list.focusForeground": "#1A1A1A",
+        "statusBar.background": "#F0F0F0",
+        "statusBar.foreground": "#1A1A1A",
+        "statusBar.border": "#D4D4D4",
+        "statusBar.debuggingBackground": "#CC0000",
+        "statusBar.debuggingForeground": "#FFFFFF",
+        "statusBar.noFolderBackground": "#F0F0F0",
+        "titleBar.activeBackground": "#E8E8E8",
+        "titleBar.activeForeground": "#1A1A1A",
+        "titleBar.border": "#D4D4D4",
+        "menu.background": "#FAFAFA",
+        "menu.foreground": "#1A1A1A",
+        "menu.selectionBackground": "#D4D4D4",
+        "menu.border": "#D4D4D4",
+        "input.background": "#FFFFFF",
+        "input.foreground": "#1A1A1A",
+        "input.border": "#D4D4D4",
+        "input.placeholderForeground": "#999999",
+        "inputOption.activeBorder": "#0066CC",
+        "focusBorder": "#0066CC",
+        "button.background": "#0066CC",
+        "button.foreground": "#FFFFFF",
+        "button.hoverBackground": "#0055AA",
+        "dropdown.background": "#FFFFFF",
+        "dropdown.foreground": "#1A1A1A",
+        "dropdown.border": "#D4D4D4",
+        "scrollbar.shadow": "#E8E8E8",
+        "scrollbarSlider.background": "#CCCCCC",
+        "scrollbarSlider.hoverBackground": "#AAAAAA",
+        "scrollbarSlider.activeBackground": "#0066CC",
+        "tab.activeBackground": "#FAFAFA",
+        "tab.activeForeground": "#1A1A1A",
+        "tab.inactiveBackground": "#F0F0F0",
+        "tab.inactiveForeground": "#999999",
+        "tab.border": "#D4D4D4",
+        "tab.activeBorderTop": "#0066CC",
+        "terminal.background": "#FFFFFF",
+        "terminal.foreground": "#1A1A1A",
+        "terminal.ansiBlack": "#1A1A1A",
+        "terminal.ansiRed": "#CC0000",
+        "terminal.ansiGreen": "#339933",
+        "terminal.ansiYellow": "#CC8800",
+        "terminal.ansiBlue": "#0066CC",
+        "terminal.ansiMagenta": "#993399",
+        "terminal.ansiCyan": "#339999",
+        "terminal.ansiWhite": "#DDDDDD",
+        "terminal.ansiBrightBlack": "#666666",
+        "terminal.ansiBrightRed": "#FF4444",
+        "terminal.ansiBrightGreen": "#33CC33",
+        "terminal.ansiBrightYellow": "#FFBB33",
+        "terminal.ansiBrightBlue": "#3399FF",
+        "terminal.ansiBrightMagenta": "#CC44CC",
+        "terminal.ansiBrightCyan": "#33CCCC",
+        "terminal.ansiBrightWhite": "#FFFFFF",
+        "diffEditor.insertedTextBackground": "#33993330",
+        "diffEditor.removedTextBackground": "#CC000030",
+        "diffEditor.insertedLineBackground": "#33993315",
+        "diffEditor.removedLineBackground": "#CC000015"
+    },
+    "tokenColors": [
+        {
+            "name": "Reserved words, Tags, and all Keywords",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "keyword.other",
+                "storage.type",
+                "storage.modifier",
+                "constant.language",
+                "entity.name.tag",
+                "entity.name.tag.pascal"
+            ],
+            "settings": {
+                "foreground": "#003399",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "comment.line",
+                "comment.block",
+                "comment.block.documentation",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#339933",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string.quoted.single",
+                "string.quoted.double"
+            ],
+            "settings": {
+                "foreground": "#0066CC"
+            }
+        },
+        {
+            "name": "Numbers and Characters",
+            "scope": [
+                "constant.numeric",
+                "constant.character"
+            ],
+            "settings": {
+                "foreground": "#993399"
+            }
+        },
+        {
+            "name": "Identifiers",
+            "scope": [
+                "variable",
+                "variable.other",
+                "variable.parameter",
+                "entity.name",
+                "entity.name.function",
+                "entity.name.type",
+                "support.type",
+                "support.class",
+                "support.constant"
+            ],
+            "settings": {
+                "foreground": "#1A1A1A"
+            }
+        },
+        {
+            "name": "Symbols, Operators, and Punctuation",
+            "scope": [
+                "keyword.operator",
+                "punctuation",
+                "punctuation.terminator",
+                "punctuation.separator"
+            ],
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "Preprocessor Directives",
+            "scope": [
+                "keyword.control.directive",
+                "meta.preprocessor"
+            ],
+            "settings": {
+                "foreground": "#CC8800"
+            }
+        },
+        {
+            "name": "Assembler",
+            "scope": [
+                "source.asm",
+                "meta.embedded.asm"
+            ],
+            "settings": {
+                "foreground": "#666666"
+            }
+        },
+        {
+            "name": "Attributes",
+            "scope": [
+                "support.attribute",
+                "punctuation.definition.annotation",
+                "meta.attribute"
+            ],
+            "settings": {
+                "foreground": "#0066CC"
+            }
+        },
+        {
+            "name": "Hot Links",
+            "scope": [
+                "markup.underline.link"
+            ],
+            "settings": {
+                "foreground": "#0066CC",
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "name": "Illegal Characters and Scripts",
+            "scope": [
+                "invalid.illegal",
+                "meta.script",
+                "source.script"
+            ],
+            "settings": {
+                "foreground": "#CC0000"
+            }
+        }
+    ]
+}
