@@ -2,7 +2,7 @@
     "name": "delphi-ide-theme",
     "displayName": "Delphi IDE Theme",
     "description": "A faithful recreation of the Delphi IDE appearance for VS Code",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "publisher": "wallaceferreira",
     "license": "MIT",
     "icon": "icon.png",
