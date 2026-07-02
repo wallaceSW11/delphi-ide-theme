@@ -159,7 +159,8 @@
                 "comment.line",
                 "comment.block",
                 "comment.block.documentation",
-                "punctuation.definition.comment"
+                "punctuation.definition.comment",
+                "string.regexp"
             ],
             "settings": {
                 "foreground": "#BCE784",
@@ -221,7 +222,7 @@
                 "meta.preprocessor"
             ],
             "settings": {
-                "foreground": "#66CDFF"
+                "foreground": "#BCE784"
             }
         },
         {

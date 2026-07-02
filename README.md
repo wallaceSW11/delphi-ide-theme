@@ -16,7 +16,7 @@ Whether you're maintaining legacy applications or building modern Object Pascal 
 
 - 🎨 Faithful Delphi 11 Alexandria color palette
 - 🌙 Dark theme
-- ☀️ Light theme *(coming soon)*
+- ☀️ Light theme
 - 🌈 CNPack-inspired 6-level structural highlighting
 - 🔥 Carefully tuned Object Pascal syntax highlighting
 - 🚀 Compatible with Visual Studio Code and Kiro IDE
@@ -122,7 +122,7 @@ Recommended:
 ## 🛣️ Roadmap
 
 - ✅ Delphi IDE Dark
-- 🚧 Delphi IDE Light
+- ✅ Delphi IDE Light
 - ✅ CNPack structural highlighting
 - 🔄 Improved semantic token support
 - 🔄 Additional Delphi language coverage

@@ -5,7 +5,8 @@ Tema para VS Code e Kiro IDE que recria fielmente a aparencia da IDE do Delphi.
 ## Comandos
 
 ```bash
-node scripts/convert-reg-to-json.mjs   # hi.reg → reference/delphi-colors.json
+node scripts/convert-reg-to-json.mjs                                 # hi.reg → reference/delphi-colors.json
+node scripts/convert-reg-to-json.mjs reference/delphi-highlight-light.reg reference/delphi-colors-light.json  # light theme
 pnpm compile                            # tsc -p ./
 pnpm watch                              # tsc -watch -p ./
 pnpm test                               # vitest run
@@ -95,3 +96,7 @@ Ver `Delphi_Theme_Roadmap.md` para o plano completo.
 - Target: VS Code 1.75+ e Kiro compativel.
 - Testes com **vitest**. Coverage via `@vitest/coverage-v8`.
 - Arquivos em `samples/` sao para testes manuais. Nao vao no .vsix.
+
+## Skills
+
+- `/pipeline` — Automatiza merge request: diff, testes, code review, ajustes, commit e criacao de MR no GitHub. Consulte `@pipeline` para o workflow completo.

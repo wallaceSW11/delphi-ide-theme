@@ -4,8 +4,8 @@ import { fileURLToPath } from 'node:url';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const PROJECT_DIR = resolve(SCRIPT_DIR, '..');
-const REG_PATH = resolve(PROJECT_DIR, 'reference', 'delphi-highlight.reg');
-const OUTPUT_PATH = resolve(PROJECT_DIR, 'reference', 'delphi-colors.json');
+const DEFAULT_REG_PATH = resolve(PROJECT_DIR, 'reference', 'delphi-highlight.reg');
+const DEFAULT_OUTPUT_PATH = resolve(PROJECT_DIR, 'reference', 'delphi-colors.json');
 
 const NAMED_COLORS = {
     clBlack: '#000000',
@@ -160,16 +160,29 @@ function sortObjectKeys(obj) {
     return sorted;
 }
 
+function readRegFile(filePath) {
+    const buffer = readFileSync(filePath);
+
+    if (buffer.length >= 2 && buffer[0] === 0xFF && buffer[1] === 0xFE)
+        return buffer.toString('utf16le');
+
+    return buffer.toString('utf-8');
+}
+
 function run() {
-    const raw = readFileSync(REG_PATH, 'utf-8');
+    const args = process.argv.slice(2);
+    const regPath = args[0] || DEFAULT_REG_PATH;
+    const outputPath = args[1] || DEFAULT_OUTPUT_PATH;
+
+    const raw = readRegFile(regPath);
     const categories = parseRegFile(raw);
     const sorted = sortObjectKeys(categories);
     const jsonOutput = JSON.stringify(sorted, null, '    ') + '\n';
 
-    writeFileSync(OUTPUT_PATH, jsonOutput, 'utf-8');
+    writeFileSync(outputPath, jsonOutput, 'utf-8');
 
     const categoryCount = Object.keys(sorted).length;
-    process.stdout.write(`Converted ${categoryCount} categories to ${OUTPUT_PATH}\n`);
+    process.stdout.write(`Converted ${categoryCount} categories to ${outputPath}\n`);
 }
 
 run();
