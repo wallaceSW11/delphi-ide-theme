@@ -50,7 +50,7 @@
                 "path": "./themes/delphi-dark-color-theme.json"
             },
             {
-                "label": "Delphi IDE Light (em desenvolvimento)",
+                "label": "Delphi IDE Light",
                 "uiTheme": "vs",
                 "path": "./themes/delphi-light-color-theme.json"
             }

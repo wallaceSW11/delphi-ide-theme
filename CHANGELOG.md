@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Delphi IDE Light theme with authentic colors extracted from Delphi IDE registry export
+- Light theme structural highlighting with 4-level depth cycle (`#868686`, `#3D78B2`, `#4D9F7D`, `#8A529F`)
+- Production-ready pipeline skill (`/pipeline`) for automated merge request workflow
+- CLI argument support in `convert-reg-to-json.mjs` for processing UTF-16 LE registry exports
+
+### Changed
+
+- Light theme label updated from "em desenvolvimento" to production status
+- README updated to reflect light theme availability
+
 ## [1.0.0] - 2026-07-01
 
 ### Added
