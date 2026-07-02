@@ -3,10 +3,12 @@ import * as vscode from 'vscode';
 const TYPE_DECL_KEYWORDS = new Set(['class', 'record', 'interface']);
 const HELPER_KEYWORD = 'helper';
 
-const STACK_PUSH_KEYWORDS = new Set(['begin', 'case', 'try', 'repeat', 'asm']);
+const STACK_PUSH_KEYWORDS = new Set(['begin', 'try', 'repeat', 'asm']);
+const CASE_KEYWORD = 'case';
 
 const DEPTH_COLORED_KEYWORDS = new Set([
     ...STACK_PUSH_KEYWORDS,
+    CASE_KEYWORD,
     'end', 'until',
     'if', 'then', 'else',
     'for', 'while',
@@ -31,6 +33,7 @@ interface BlockEntry {
     kind: 'type_decl' | 'begin_end';
     depth: number;
     line: number;
+    decrementsDepth: boolean;
 }
 
 interface TokenResult {
@@ -263,6 +266,7 @@ export function parseSemanticTokens(document: vscode.TextDocument): TokenResult[
                 kind: 'type_decl',
                 depth,
                 line: lineIdx,
+                decrementsDepth: false,
             });
 
             results.push({
@@ -304,7 +308,9 @@ export function parseSemanticTokens(document: vscode.TextDocument): TokenResult[
                     if (top.kind === 'begin_end')
                     {
                         blockStack.pop();
-                        beginEndDepth = Math.max(0, beginEndDepth - 1);
+
+                        if (top.decrementsDepth)
+                            beginEndDepth = Math.max(0, beginEndDepth - 1);
                         break;
                     }
 
@@ -337,7 +343,9 @@ export function parseSemanticTokens(document: vscode.TextDocument): TokenResult[
                     if (top.kind === 'begin_end' && top.depth > depth)
                     {
                         blockStack.pop();
-                        beginEndDepth = Math.max(0, beginEndDepth - 1);
+
+                        if (top.decrementsDepth)
+                            beginEndDepth = Math.max(0, beginEndDepth - 1);
                         continue;
                     }
 
@@ -368,7 +376,9 @@ export function parseSemanticTokens(document: vscode.TextDocument): TokenResult[
                     if (top.kind === 'begin_end')
                     {
                         blockStack.pop();
-                        beginEndDepth = Math.max(0, beginEndDepth - 1);
+
+                        if (top.decrementsDepth)
+                            beginEndDepth = Math.max(0, beginEndDepth - 1);
                         break;
                     }
 
@@ -420,12 +430,22 @@ export function parseSemanticTokens(document: vscode.TextDocument): TokenResult[
                 if (w.word === 'for')
                     seenFor = true;
 
-                if (STACK_PUSH_KEYWORDS.has(w.word))
+                if (w.word === CASE_KEYWORD)
                 {
                     blockStack.push({
                         kind: 'begin_end',
                         depth,
                         line: lineIdx,
+                        decrementsDepth: false,
+                    });
+                }
+                else if (STACK_PUSH_KEYWORDS.has(w.word))
+                {
+                    blockStack.push({
+                        kind: 'begin_end',
+                        depth,
+                        line: lineIdx,
+                        decrementsDepth: true,
                     });
 
                     pendingIncrement = true;
