@@ -142,6 +142,7 @@
                 "keyword.other",
                 "storage.type",
                 "storage.modifier",
+                "storage.support",
                 "constant.language",
                 "entity.name.tag",
                 "entity.name.tag.pascal"
@@ -194,7 +195,6 @@
                 "entity.name",
                 "entity.name.function",
                 "entity.name.type",
-                "support.type",
                 "support.class",
                 "support.constant"
             ],
