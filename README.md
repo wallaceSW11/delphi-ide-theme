@@ -32,9 +32,13 @@ The screenshots below compare the original Delphi IDE with Delphi IDE Theme runn
 |------------|----------|
 | ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/delphi-dark.png) | ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/vscode-dark.png) |
 
+| Delphi IDE (Light) | VS Code (Light) |
+|--------------------|-----------------|
+| ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/delphi-light.png) | ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/vscode-light.png) |
+
 ---
 
-## 🎨 Included Theme
+## 🎨 Included Themes
 
 ### Delphi IDE Dark
 
@@ -48,6 +52,19 @@ Highlights include:
 - Numbers in magenta
 - Classes, Records and Interfaces highlighted in red
 - CNPack-inspired structural keyword coloring
+
+### Delphi IDE Light
+
+A faithful light version preserving the same semantic structure while adapting colors for light backgrounds.
+
+Highlights include:
+
+- Reserved words in navy blue (bold)
+- Comments in green (italic)
+- Strings in blue
+- Numbers in blue
+- Classes, Records and Interfaces highlighted in dark red
+- Same CNPack structural keyword coloring as the dark theme
 
 ---
 
