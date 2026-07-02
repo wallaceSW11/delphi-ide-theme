@@ -1,70 +1,59 @@
 # Delphi IDE Theme
 
-> **Bring the authentic Delphi IDE experience to Visual Studio Code.**
+> **Bring the authentic Delphi IDE experience to Visual Studio Code and Kiro IDE.**
 
-A pixel-faithful recreation of the Delphi IDE editor, including the classic CNPack-inspired structural highlighting.
+A faithful recreation of the Delphi 11 Alexandria editor colors, carefully designed to reproduce the familiar look and feel of the original IDE — including the iconic CNPack-inspired structural highlighting.
 
-Designed for developers who love Delphi and want the same familiar coding experience in Visual Studio Code and Kiro IDE.
+Whether you're maintaining legacy applications or building modern Object Pascal projects, Delphi IDE Theme makes VS Code feel like home.
 
-![Delphi IDE Theme](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/logo.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/icon_240.png" width="240" alt="Delphi IDE Theme">
+</p>
 
 ---
 
 ## ✨ Features
 
-- 🎨 Faithful recreation of the Delphi IDE color palette
-- 🌙 Dark and Light themes
+- 🎨 Faithful Delphi 11 Alexandria color palette
+- 🌙 Dark theme
+- ☀️ Light theme *(coming soon)*
 - 🌈 CNPack-inspired 6-level structural highlighting
-- 🔥 Carefully tuned syntax highlighting for Delphi / Object Pascal
-- 📖 Specification-driven development (SDD)
-- 🧪 Complete Delphi syntax validation suite
-- 🚀 Compatible with VS Code and Kiro IDE
+- 🔥 Carefully tuned Object Pascal syntax highlighting
+- 🚀 Compatible with Visual Studio Code and Kiro IDE
 - ❤️ Built by a Delphi developer for the Delphi community
 
 ---
 
-# 📸 Preview
+## 📸 Preview
 
-> The screenshots below compare the original Delphi IDE with this theme running in Visual Studio Code.
+The screenshots below compare the original Delphi IDE with Delphi IDE Theme running in Visual Studio Code.
 
 | Delphi IDE | VS Code |
 |------------|----------|
 | ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/delphi-dark.png) | ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/vscode-dark.png) |
 
-| Delphi IDE (Light) | VS Code (Light) |
-|--------------------|-----------------|
-| ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/delphi-light.png) | ![](https://raw.githubusercontent.com/wallacesw11/delphi-ide-theme/main/docs/images/vscode-light.png) |
-
 ---
 
-# 🎨 Included Themes
+## 🎨 Included Theme
 
-## Delphi IDE Dark
+### Delphi IDE Dark
 
-Faithfully reproduces the default Delphi IDE dark appearance.
+Designed to faithfully reproduce the default Delphi 11 Alexandria Dark theme.
 
 Highlights include:
 
-- Reserved words in warm gold (bold)
+- Reserved words in warm gold
 - Comments in green (italic)
 - Strings in blue
 - Numbers in magenta
-- Type declarations (`class`, `record`, `interface`) highlighted in red
-- Matching `end` keywords colored according to Delphi's structural highlighting
+- Classes, Records and Interfaces highlighted in red
+- CNPack-inspired structural keyword coloring
 
 ---
 
-## Delphi IDE Light
+## 🌈 Structural Highlighting
 
-A faithful light version preserving the same semantic structure while adapting colors for light backgrounds.
-
----
-
-# 🌈 Structural Highlighting
-
-One of Delphi's most iconic editor features.
-
-Block keywords change color depending on the current nesting level.
+One of Delphi's most recognizable editor features is the structural coloring of nested blocks.
 
 Supported keywords include:
 
@@ -86,88 +75,30 @@ Supported keywords include:
 - `continue`
 - `exit`
 
-| Depth | Color | Hex |
-|--------|-------|---------|
-| 1 | 🔴 Red | `#FA0000` |
-| 2 | 🟠 Orange | `#FF9900` |
-| 3 | 🟢 Green | `#59CB33` |
-| 4 | 🔵 Turquoise | `#00CED1` |
-| 5 | 🔷 Blue | `#4169E1` |
-| 6 | 🟣 Purple | `#9B59B6` |
+| Depth | Color        | Hex       |
+| ----- | ------------ | --------- |
+| 1     | Red          | `#FA0000` |
+| 2     | Orange       | `#FF9900` |
+| 3     | Green        | `#59CB33` |
+| 4     | Turquoise    | `#00CED1` |
+| 5     | Blue         | `#4169E1` |
+| 6     | Purple       | `#9B59B6` |
 
-After level 6 the cycle starts again.
-
----
-
-# 🧪 Testing
-
-This project includes a complete Delphi syntax validation suite.
-
-The sample project exercises nearly every Object Pascal language construct, allowing visual verification of:
-
-- Keywords
-- Types
-- Classes
-- Interfaces
-- Records
-- Generics
-- Anonymous Methods
-- Operators
-- Properties
-- XML Documentation
-- Compiler Directives
-- Numbers
-- Strings
-- Characters
-- Comments
-- Structural Highlighting
-- and much more...
-
-The goal is simple:
-
-> Every Delphi token should look as close as possible to the original IDE.
+After level 6, the color cycle repeats.
 
 ---
 
-# 📚 Documentation
+## 📦 Installation
 
-The project is built using a specification-driven approach.
+Install directly from the Visual Studio Code Marketplace.
 
-Documentation includes:
-
-- Delphi color specification
-- Delphi → TextMate scope mapping
-- Structural highlighting specification
-- Testing guidelines
-- Development roadmap
-
----
-
-# ⚙️ Recommended Pascal Extensions
-
-This theme works with any Pascal extension that provides TextMate scopes.
-
-Recommended extensions:
-
-- Pascal (Alefragnani)
-- OmniPascal
-- Delphi LSP (when available)
-
----
-
-# 📦 Installation
-
-## Marketplace
-
-Open the Extensions panel and search for:
+Search for:
 
 ```
 Delphi IDE Theme
 ```
 
----
-
-## Manual Installation
+or install manually:
 
 ```bash
 code --install-extension delphi-ide-theme-x.x.x.vsix
@@ -175,58 +106,71 @@ code --install-extension delphi-ide-theme-x.x.x.vsix
 
 ---
 
-# 🛣️ Roadmap
+## 🔧 Recommended Pascal Extensions
+
+This theme works with any Pascal extension that provides TextMate scopes.
+
+Recommended:
+
+- Pascal (Alefragnani)
+- OmniPascal
+- Delphi LSP (when available)
+- [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) — colorizes indentation levels, complementing the structural highlighting
+
+---
+
+## 🛣️ Roadmap
 
 - ✅ Delphi IDE Dark
-- ✅ Delphi IDE Light
-- ✅ Delphi syntax validation suite
-- 🔄 Improve semantic token coverage
-- 🔄 Additional language edge cases
+- 🚧 Delphi IDE Light
+- ✅ CNPack structural highlighting
+- 🔄 Improved semantic token support
+- 🔄 Additional Delphi language coverage
 - 🔄 Future Delphi version refinements
 
 ---
 
-# 🤝 Contributing
+## 🤝 Contributing
 
-Contributions, bug reports and suggestions are always welcome.
+Contributions, suggestions and bug reports are always welcome.
 
-If you notice a syntax highlighting difference between Delphi and VS Code, feel free to open an Issue.
+If you find any syntax highlighting that differs from the Delphi IDE, feel free to open an Issue.
 
 ---
 
-# ⚠️ Disclaimer
+## ⚠️ Disclaimer
 
-This is an independent open-source project inspired by the visual appearance of the Delphi IDE editor.
+This is an independent open-source project inspired by the visual appearance of the Delphi IDE.
 
-It is **not affiliated with, endorsed by, or sponsored by Embarcadero Technologies or the CNPack project**.
+It is **not affiliated with, endorsed by, or sponsored by Embarcadero Technologies or the CNPack project.**
 
 All trademarks belong to their respective owners.
 
 ---
 
-# 📄 License
+## 📄 License
 
 MIT License
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Wallace Ferreira**
 
 Senior Full Stack Engineer • Product-minded Engineer • AI-Assisted Development
 
-GitHub
+GitHub:
 
 https://github.com/wallacesw11
 
 ---
 
-## ⭐ If this project helped you...
+## ⭐ Enjoying the project?
 
-Please consider giving it a **Star** on GitHub.
+If this theme makes your Delphi development experience better, please consider giving the repository a **Star**.
 
-It helps the project reach more Delphi developers and encourages future improvements.
+It helps the project reach more developers and motivates future improvements.
 
 ---
 
@@ -237,3 +181,7 @@ This project is more than a color theme.
 It is an effort to faithfully reproduce the Delphi IDE editing experience using modern editors such as Visual Studio Code and Kiro IDE, while documenting the language highlighting rules through a specification-driven development approach.
 
 The long-term goal is to provide the Delphi community with a high-quality, well-documented and professionally maintained theme.
+
+---
+
+> **Making Delphi feel like home in modern editors.**
