@@ -1,6 +1,12 @@
 import * as vscode from 'vscode';
 
-export function getThemeConfig() {
+export interface ThemeConfig {
+    ideBackground: string;
+    editorBackground: string;
+    primaryColor: string;
+}
+
+export function getThemeConfig(): ThemeConfig {
     const cfg = vscode.workspace.getConfiguration('delphiTheme');
 
     return {

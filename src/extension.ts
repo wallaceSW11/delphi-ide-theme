@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { PascalSemanticTokensProvider } from './semanticTokens';
 import { getThemeConfig } from './config';
 
-const DARK_THEME_SELECTOR = '[Delphi IDE Dark]';
+const darkThemeSelector = '[Delphi IDE Dark]';
 
 function applyCustomizations(): void {
     const config = getThemeConfig();
@@ -10,7 +10,7 @@ function applyCustomizations(): void {
     const existing = workbenchConfig.inspect<Record<string, unknown>>('workbench.colorCustomizations');
 
     const globalValue = (existing?.globalValue ?? {}) as Record<string, unknown>;
-    const current = (globalValue[DARK_THEME_SELECTOR] ?? {}) as Record<string, string>;
+    const current = (globalValue[darkThemeSelector] ?? {}) as Record<string, string>;
 
     const updated = {
         ...current,
@@ -35,7 +35,7 @@ function applyCustomizations(): void {
         'inputOption.activeBorder': config.primaryColor,
     };
 
-    const merged = { ...globalValue, [DARK_THEME_SELECTOR]: updated };
+    const merged = { ...globalValue, [darkThemeSelector]: updated };
 
     workbenchConfig.update(
         'workbench.colorCustomizations',
