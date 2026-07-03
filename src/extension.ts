@@ -1,5 +1,48 @@
 import * as vscode from 'vscode';
 import { PascalSemanticTokensProvider } from './semanticTokens';
+import { getThemeConfig } from './config';
+
+const darkThemeSelector = '[Delphi IDE Dark]';
+
+function applyCustomizations(): void {
+    const config = getThemeConfig();
+    const workbenchConfig = vscode.workspace.getConfiguration();
+    const existing = workbenchConfig.inspect<Record<string, unknown>>('workbench.colorCustomizations');
+
+    const globalValue = (existing?.globalValue ?? {}) as Record<string, unknown>;
+    const current = (globalValue[darkThemeSelector] ?? {}) as Record<string, string>;
+
+    const updated = {
+        ...current,
+        'editor.background': config.editorBackground,
+        'editorGutter.background': config.editorBackground,
+        'tab.activeBackground': config.editorBackground,
+        'sideBar.background': config.ideBackground,
+        'activityBar.background': config.ideBackground,
+        'statusBar.background': config.ideBackground,
+        'statusBar.noFolderBackground': config.ideBackground,
+        'titleBar.activeBackground': config.ideBackground,
+        'menu.background': config.ideBackground,
+        'tab.inactiveBackground': config.ideBackground,
+        'terminal.background': config.ideBackground,
+        'editor.foldBackground': config.ideBackground,
+        'scrollbar.shadow': config.ideBackground,
+        'sideBarSectionHeader.background': config.ideBackground,
+        'activityBarBadge.background': config.primaryColor,
+        'focusBorder': config.primaryColor,
+        'button.background': config.primaryColor,
+        'tab.activeBorderTop': config.primaryColor,
+        'inputOption.activeBorder': config.primaryColor,
+    };
+
+    const merged = { ...globalValue, [darkThemeSelector]: updated };
+
+    workbenchConfig.update(
+        'workbench.colorCustomizations',
+        merged,
+        vscode.ConfigurationTarget.Global,
+    );
+}
 
 export function activate(context: vscode.ExtensionContext): void {
     const selector: vscode.DocumentSelector = [
@@ -20,6 +63,15 @@ export function activate(context: vscode.ExtensionContext): void {
             provider,
             legend,
         ),
+    );
+
+    applyCustomizations();
+
+    context.subscriptions.push(
+        vscode.workspace.onDidChangeConfiguration(e => {
+            if (e.affectsConfiguration('delphiTheme'))
+                applyCustomizations();
+        }),
     );
 }
 

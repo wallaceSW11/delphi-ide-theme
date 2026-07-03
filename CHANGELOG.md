@@ -9,15 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Delphi IDE Light theme with authentic colors extracted from Delphi IDE registry export
-- Light theme structural highlighting with 4-level depth cycle (`#868686`, `#3D78B2`, `#4D9F7D`, `#8A529F`)
-- Production-ready pipeline skill (`/pipeline`) for automated merge request workflow
-- CLI argument support in `convert-reg-to-json.mjs` for processing UTF-16 LE registry exports
+- Theme customization panel via VS Code Settings (`delphiTheme.ideBackground`, `delphiTheme.editorBackground`, `delphiTheme.primaryColor`)
+- Backup of original theme colors in `reference/theme-colors-original.json`
 
 ### Changed
 
-- Light theme label updated from "em desenvolvimento" to production status
-- README updated to reflect light theme availability
+- Darker editor background (`#110F18`) and IDE chrome background (`#15141B`) for improved visual comfort
+- Primary accent color changed from yellow (`#FFE0BC`) to deep red (`#990000`) for buttons, badges, and focus indicators
+- Light theme primary color changed from teal (`#008080`) to blue (`#007ACC`)
+- README branding updated from "faithful recreation" to "inspired recreation" for transparency
+- README added customization documentation and light theme screenshots
 
 ## [1.0.0] - 2026-07-01
 

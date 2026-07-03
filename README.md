@@ -2,7 +2,7 @@
 
 > **Bring the authentic Delphi IDE experience to Visual Studio Code and Kiro IDE.**
 
-A faithful recreation of the Delphi 11 Alexandria editor colors, carefully designed to reproduce the familiar look and feel of the original IDE — including the iconic CNPack-inspired structural highlighting.
+An inspired recreation of the Delphi 11 Alexandria editor colors, carefully designed to capture the familiar look and feel of the original IDE — including the iconic CNPack-inspired structural highlighting.
 
 Whether you're maintaining legacy applications or building modern Object Pascal projects, Delphi IDE Theme makes VS Code feel like home.
 
@@ -14,7 +14,7 @@ Whether you're maintaining legacy applications or building modern Object Pascal 
 
 ## ✨ Features
 
-- 🎨 Faithful Delphi 11 Alexandria color palette
+- 🎨 Inspired by the Delphi 11 Alexandria color palette
 - 🌙 Dark theme
 - ☀️ Light theme
 - 🌈 CNPack-inspired 6-level structural highlighting
@@ -42,7 +42,7 @@ The screenshots below compare the original Delphi IDE with Delphi IDE Theme runn
 
 ### Delphi IDE Dark
 
-Designed to faithfully reproduce the default Delphi 11 Alexandria Dark theme.
+Designed to capture the default Delphi 11 Alexandria Dark theme.
 
 Highlights include:
 
@@ -55,7 +55,7 @@ Highlights include:
 
 ### Delphi IDE Light
 
-A faithful light version preserving the same semantic structure while adapting colors for light backgrounds.
+A light version preserving the same semantic structure while adapting colors for light backgrounds.
 
 Highlights include:
 
@@ -120,6 +120,22 @@ or install manually:
 ```bash
 code --install-extension delphi-ide-theme-x.x.x.vsix
 ```
+
+---
+
+## 🎛️ Customization
+
+You can personalize the Delphi IDE Dark theme appearance through VS Code settings.
+
+Open **Settings** (`Ctrl+,`) and search for `delphiTheme`:
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `delphiTheme.ideBackground` | `#15141B` | IDE chrome background (sidebar, activity bar, status bar, menus, terminal) |
+| `delphiTheme.editorBackground` | `#110F18` | Editor area and gutter background |
+| `delphiTheme.primaryColor` | `#990000` | Accent color for buttons, badges, focus indicators, and active tab border |
+
+Changes apply immediately — no reload needed.
 
 ---
 
