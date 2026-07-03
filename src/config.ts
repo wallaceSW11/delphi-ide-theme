@@ -12,6 +12,6 @@ export function getThemeConfig(): ThemeConfig {
     return {
         ideBackground: cfg.get<string>('ideBackground', '#15141B'),
         editorBackground: cfg.get<string>('editorBackground', '#110F18'),
-        primaryColor: cfg.get<string>('primaryColor', '#990000'),
+        primaryColor: cfg.get<string>('primaryColor', '#BBBBBC'),
     };
 }

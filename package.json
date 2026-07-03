@@ -71,7 +71,7 @@
                 },
                 "delphiTheme.primaryColor": {
                     "type": "string",
-                    "default": "#990000",
+                    "default": "#BBBBBC",
                     "description": "Primary accent color for buttons, badges, focus indicators, and active tab border"
                 }
             }
