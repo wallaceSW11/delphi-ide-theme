@@ -123,6 +123,22 @@ code --install-extension delphi-ide-theme-x.x.x.vsix
 
 ---
 
+## 🎛️ Customization
+
+You can personalize the Delphi IDE Dark theme appearance through VS Code settings.
+
+Open **Settings** (`Ctrl+,`) and search for `delphiTheme`:
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `delphiTheme.ideBackground` | `#15141B` | IDE chrome background (sidebar, activity bar, status bar, menus, terminal) |
+| `delphiTheme.editorBackground` | `#110F18` | Editor area and gutter background |
+| `delphiTheme.primaryColor` | `#990000` | Accent color for buttons, badges, focus indicators, and active tab border |
+
+Changes apply immediately — no reload needed.
+
+---
+
 ## 🔧 Recommended Pascal Extensions
 
 This theme works with any Pascal extension that provides TextMate scopes.

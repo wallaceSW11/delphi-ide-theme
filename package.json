@@ -32,7 +32,8 @@
     "main": "./out/extension.js",
     "activationEvents": [
         "onLanguage:pascal",
-        "onLanguage:objectpascal"
+        "onLanguage:objectpascal",
+        "onStartupFinished"
     ],
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
@@ -54,7 +55,27 @@
                 "uiTheme": "vs",
                 "path": "./themes/delphi-light-color-theme.json"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Delphi IDE Theme",
+            "properties": {
+                "delphiTheme.ideBackground": {
+                    "type": "string",
+                    "default": "#15141B",
+                    "description": "Background color for IDE chrome (sidebar, activity bar, status bar, title bar, menus, terminal, inactive tabs)"
+                },
+                "delphiTheme.editorBackground": {
+                    "type": "string",
+                    "default": "#110F18",
+                    "description": "Background color for the editor area and gutter"
+                },
+                "delphiTheme.primaryColor": {
+                    "type": "string",
+                    "default": "#990000",
+                    "description": "Primary accent color for buttons, badges, focus indicators, and active tab border"
+                }
+            }
+        }
     },
     "devDependencies": {
         "@types/vscode": "^1.75.0",
