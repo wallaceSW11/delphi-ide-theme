@@ -247,6 +247,31 @@
             }
         },
         {
+            "name": "JSON property names",
+            "scope": [
+                "support.type.property-name.json",
+                "support.type.property-name"
+            ],
+            "settings": {
+                "foreground": "#800000"
+            }
+        },
+        {
+            "name": "JSON punctuation (braces, brackets, colons, commas)",
+            "scope": [
+                "punctuation.definition.dictionary.begin.json",
+                "punctuation.definition.dictionary.end.json",
+                "punctuation.definition.array.begin.json",
+                "punctuation.definition.array.end.json",
+                "punctuation.separator.dictionary.key-value.json",
+                "punctuation.separator.dictionary.pair.json",
+                "punctuation.separator.array.json"
+            ],
+            "settings": {
+                "foreground": "#808080"
+            }
+        },
+        {
             "name": "Hot Links",
             "scope": [
                 "markup.underline.link"

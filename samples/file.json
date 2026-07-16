@@ -1,0 +1,90 @@
+{
+    "name": "delphi-ide-theme",
+    "displayName": "Delphi IDE Theme",
+    "version": "1.0.8",
+    "publisher": "wallaceferreira",
+    "license": "MIT",
+    "private": true,
+    "preview": false,
+    "rating": 4.5,
+    "downloads": 1280,
+    "price": 0.0,
+    "scientificExample": 1.5e10,
+    "negativeExample": -42,
+    "engines": {
+        "vscode": "^1.75.0",
+        "node": ">=18.0.0"
+    },
+    "categories": [
+        "Themes",
+        "Programming Languages",
+        "Other"
+    ],
+    "keywords": [
+        "delphi",
+        "pascal",
+        "objectpascal",
+        "theme"
+    ],
+    "activationEvents": [
+        "onLanguage:pascal",
+        "onLanguage:objectpascal",
+        "onStartupFinished"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wallaceSW11/delphi-ide-theme.git",
+        "directory": "/home/project"
+    },
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "package": "vsce package --no-dependencies",
+        "test": "vitest run",
+        "test:watch": "vitest"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Delphi IDE Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/delphi-dark-color-theme.json"
+            },
+            {
+                "label": "Delphi IDE Light",
+                "uiTheme": "vs",
+                "path": "./themes/delphi-light-color-theme.json"
+            }
+        ],
+        "configuration": {
+            "title": "Delphi IDE Theme",
+            "properties": {
+                "delphiTheme.ideBackground": {
+                    "type": "string",
+                    "default": "#15141B",
+                    "description": "Background color for IDE chrome"
+                },
+                "delphiTheme.editorBackground": {
+                    "type": "string",
+                    "default": "#110F18",
+                    "description": "Background color for editor"
+                },
+                "delphiTheme.primaryColor": {
+                    "type": "string",
+                    "default": "#BBBBBC",
+                    "description": "Primary accent color"
+                }
+            }
+        }
+    },
+    "escapeSequences": "Line1\nLine2\tTabbed \"Quote\" \\Backslash",
+    "unicodeText": "Cora\u00e7\u00e3o",
+    "emptyString": "",
+    "nullValue": null,
+    "booleanFlags": {
+        "enabled": true,
+        "debugMode": false,
+        "strictMode": true,
+        "allowUnused": false
+    }
+}
