@@ -1,8 +1,8 @@
 # Delphi IDE Theme
 
-> **Bring the authentic Delphi IDE experience to Visual Studio Code and Kiro IDE.**
+> **A Delphi-inspired theme for Visual Studio Code and Kiro IDE.**
 
-An inspired recreation of the Delphi 11 Alexandria editor colors, carefully designed to capture the familiar look and feel of the original IDE — including the iconic CNPack-inspired structural highlighting.
+A color theme based on the Delphi 11 Alexandria editor, designed to capture the familiar look and feel of the original IDE — including CNPack-inspired structural highlighting.
 
 Whether you're maintaining legacy applications or building modern Object Pascal projects, Delphi IDE Theme makes VS Code feel like home.
 
@@ -14,7 +14,7 @@ Whether you're maintaining legacy applications or building modern Object Pascal 
 
 ## ✨ Features
 
-- 🎨 Inspired by the Delphi 11 Alexandria color palette
+- 🎨 Based on the Delphi 11 Alexandria color palette
 - 🌙 Dark theme
 - ☀️ Light theme
 - 🌈 CNPack-inspired 6-level structural highlighting
@@ -133,21 +133,22 @@ Open **Settings** (`Ctrl+,`) and search for `delphiTheme`:
 |---------|---------|-------------|
 | `delphiTheme.ideBackground` | `#15141B` | IDE chrome background (sidebar, activity bar, status bar, menus, terminal) |
 | `delphiTheme.editorBackground` | `#110F18` | Editor area and gutter background |
-| `delphiTheme.primaryColor` | `#990000` | Accent color for buttons, badges, focus indicators, and active tab border |
+| `delphiTheme.primaryColor` | `#BBBBBC` | Accent color for buttons, badges, focus indicators, and active tab border |
 
 Changes apply immediately — no reload needed.
 
 ---
 
-## 🔧 Recommended Pascal Extensions
+## 🔧 Required Pascal Extension
 
-This theme works with any Pascal extension that provides TextMate scopes.
+This theme **requires** a Pascal extension that provides TextMate grammar scopes and language support for `.pas`, `.dpr`, `.dpk`, and `.inc` files. Without it, Pascal files open as plain text and the theme cannot apply any syntax highlighting.
 
-Recommended:
+**[Pascal](https://marketplace.visualstudio.com/items?itemName=alefragnani.pascal)** by Alessandro Fragnani is the recommended extension and the one this theme was developed and tested with.
 
-- Pascal (Alefragnani)
-- OmniPascal
-- Delphi LSP (when available)
+Also available on [Open VSX Registry](https://open-vsx.org/extension/alefragnani/pascal) for Kiro IDE and other VS Code-compatible editors.
+
+### Also recommended
+
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) — colorizes indentation levels, complementing the structural highlighting
 
 ---
@@ -211,10 +212,10 @@ It helps the project reach more developers and motivates future improvements.
 
 This project is more than a color theme.
 
-It is an effort to faithfully reproduce the Delphi IDE editing experience using modern editors such as Visual Studio Code and Kiro IDE, while documenting the language highlighting rules through a specification-driven development approach.
+It is an effort to reproduce the Delphi IDE editing experience using modern editors such as Visual Studio Code and Kiro IDE, while documenting the language highlighting rules through a specification-driven development approach.
 
 The long-term goal is to provide the Delphi community with a high-quality, well-documented and professionally maintained theme.
 
 ---
 
-> **Making Delphi feel like home in modern editors.**
+> **A familiar Delphi experience in modern editors.**

@@ -1,7 +1,7 @@
 {
     "name": "delphi-ide-theme",
     "displayName": "Delphi IDE Theme",
-    "description": "A faithful recreation of the Delphi IDE appearance for VS Code",
+    "description": "A Delphi-inspired color theme for VS Code and Kiro IDE, based on the Delphi 11 IDE",
     "version": "1.0.8",
     "publisher": "wallaceferreira",
     "license": "MIT",
