@@ -1,45 +1,45 @@
 {
     "name": "delphi-ide-theme",
     "displayName": "Delphi IDE Theme",
-    "description": "A Delphi-inspired color theme for VS Code and Kiro IDE, based on the Delphi 11 IDE",
     "version": "1.0.8",
     "publisher": "wallaceferreira",
     "license": "MIT",
-    "icon": "icon.png",
+    "private": true,
+    "preview": false,
+    "rating": 4.5,
+    "downloads": 1280,
+    "price": 0.0,
+    "scientificExample": 1.5e10,
+    "negativeExample": -42,
     "engines": {
-        "vscode": "^1.75.0"
+        "vscode": "^1.75.0",
+        "node": ">=18.0.0"
     },
     "categories": [
-        "Themes"
+        "Themes",
+        "Programming Languages",
+        "Other"
     ],
     "keywords": [
         "delphi",
         "pascal",
         "objectpascal",
-        "theme",
-        "color-theme",
-        "dark",
-        "light"
+        "theme"
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wallacesw11/delphi-ide-theme"
-    },
-    "bugs": {
-        "url": "https://github.com/wallacesw11/delphi-ide-theme/issues"
-    },
-    "homepage": "https://github.com/wallacesw11/delphi-ide-theme#readme",
-    "main": "./out/extension.js",
     "activationEvents": [
         "onLanguage:pascal",
         "onLanguage:objectpascal",
         "onStartupFinished"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wallaceSW11/delphi-ide-theme.git",
+        "directory": "/home/project"
+    },
     "scripts": {
-        "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "package": "vsce package --no-dependencies --allow-missing-repository",
+        "package": "vsce package --no-dependencies",
         "test": "vitest run",
         "test:watch": "vitest"
     },
@@ -62,26 +62,29 @@
                 "delphiTheme.ideBackground": {
                     "type": "string",
                     "default": "#15141B",
-                    "description": "Background color for IDE chrome (sidebar, activity bar, status bar, title bar, menus, terminal, inactive tabs)"
+                    "description": "Background color for IDE chrome"
                 },
                 "delphiTheme.editorBackground": {
                     "type": "string",
                     "default": "#110F18",
-                    "description": "Background color for the editor area and gutter"
+                    "description": "Background color for editor"
                 },
                 "delphiTheme.primaryColor": {
                     "type": "string",
                     "default": "#BBBBBC",
-                    "description": "Primary accent color for buttons, badges, focus indicators, and active tab border"
+                    "description": "Primary accent color"
                 }
             }
         }
     },
-    "devDependencies": {
-        "@types/vscode": "^1.75.0",
-        "@vscode/vsce": "^3.0.0",
-        "typescript": "^5.7.0",
-        "vitest": "^3.0.0"
-    },
-    "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
+    "escapeSequences": "Line1\nLine2\tTabbed \"Quote\" \\Backslash",
+    "unicodeText": "Cora\u00e7\u00e3o",
+    "emptyString": "",
+    "nullValue": null,
+    "booleanFlags": {
+        "enabled": true,
+        "debugMode": false,
+        "strictMode": true,
+        "allowUnused": false
+    }
 }
