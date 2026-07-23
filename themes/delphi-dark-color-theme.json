@@ -272,6 +272,77 @@
             }
         },
         {
+            "name": "Markdown headings",
+            "scope": [
+                "markup.heading",
+                "punctuation.definition.heading",
+                "entity.name.section"
+            ],
+            "settings": {
+                "foreground": "#FFE0BC",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown bold",
+            "scope": "markup.bold",
+            "settings": {
+                "foreground": "#FFE0BC",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown italic",
+            "scope": "markup.italic",
+            "settings": {
+                "foreground": "#BCE784",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown blockquotes",
+            "scope": [
+                "markup.quote",
+                "punctuation.definition.quote"
+            ],
+            "settings": {
+                "foreground": "#C0C0C0"
+            }
+        },
+        {
+            "name": "Markdown list markers",
+            "scope": "punctuation.definition.list.begin",
+            "settings": {
+                "foreground": "#66CDFF"
+            }
+        },
+        {
+            "name": "Markdown inline code",
+            "scope": "markup.inline.raw",
+            "settings": {
+                "foreground": "#FF7FAA"
+            }
+        },
+        {
+            "name": "Markdown fenced code fences and horizontal rules",
+            "scope": [
+                "punctuation.definition.markdown",
+                "fenced_code.block.language",
+                "meta.separator"
+            ],
+            "settings": {
+                "foreground": "#C0C0C0"
+            }
+        },
+        {
+            "name": "Markdown strikethrough",
+            "scope": "markup.strikethrough",
+            "settings": {
+                "foreground": "#808080",
+                "fontStyle": "strikethrough"
+            }
+        },
+        {
             "name": "Hot Links",
             "scope": [
                 "markup.underline.link"
