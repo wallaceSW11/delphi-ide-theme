@@ -9,7 +9,8 @@ Fluxo completo de entrega: diff → testes → code review → commit → MR.
 
 ## Comportamento
 
-- Tudo em português, direto, sem enrolação, sem emojis.
+- Comunicação com o usuário em português, direta, sem enrolação, sem emojis.
+- **Commits, título e corpo do MR em inglês** — padrão do repositório.
 - **Fluxo automático** — não pergunte nada ao usuário (nem mensagem de commit, nem confirmação), exceto quando houver dúvida real.
 - **Overrides durante esta skill** — as proibições do agente principal sobre `git add/commit/push` e sobre criar/rodar testes ficam SUSPENSAS dentro do `/pipeline` (autorizado pelo usuário). Ainda assim:
   - Commit é permitido **somente na etapa 6** e somente para os arquivos que esta skill criou/ajustou.
@@ -90,10 +91,10 @@ Apenas os arquivos criados/ajustados por esta skill (testes, correções de code
 
 ```bash
 git add <arquivos da skill>
-git commit -m "tipo(escopo): descrição em pt-br"
+git commit -m "type(scope): description em inglês"
 ```
 
-Mensagem: analisar `git diff --cached --stat` + `git diff --cached` e gerar `tipo(escopo): descrição` em português (tipos: feat, fix, refactor, style, test, chore).
+Mensagem: analisar `git diff --cached --stat` + `git diff --cached` e gerar `type(scope): description` em inglês (types: feat, fix, refactor, style, test, chore).
 
 ### 7. Push e MR
 
@@ -103,24 +104,24 @@ git push origin HEAD
 
 Branch atual: `git rev-parse --abbrev-ref HEAD`. Título do MR = mensagem do commit.
 
-Corpo do MR:
+Corpo do MR (em inglês):
 
 ```markdown
-## O que mudou
+## What changed
 
-### `{arquivos principais}`
-{descrição concisa das mudanças}
+### `{main files}`
+{concise description of the changes}
 
-### Testes
-{se houver, listar testes criados/atualizados}
+### Tests
+{list new/updated tests if any}
 
-## Como testar
+## How to test
 pnpm test
 pnpm compile
 ```
 
 ```bash
-gh pr create --base main --head <branch> --title "tipo(escopo): descrição" --body-file <arquivo-temporário>
+gh pr create --base main --head <branch> --title "type(scope): description" --body-file <arquivo-temporário>
 ```
 
 ### 8. Resultado
