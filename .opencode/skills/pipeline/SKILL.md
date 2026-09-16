@@ -24,11 +24,13 @@ Fluxo completo de entrega: diff → testes → code review → commit → MR.
 ### 0. Preparação
 
 ```bash
-gh auth status --active   # capturar a conta ativa para restaurar no final
+gh auth status            # capturar a conta com "Active account: true" para restaurar no final
 gh auth switch --user wallaceSW11
 git config user.name      # deve ser wallacesw11 — se não for, PARAR e perguntar
 git status --short
 ```
+
+A conta marcada com `Active account: true` na saída do `gh auth status` é a que será restaurada na etapa 9.
 
 Se `git status` mostrar arquivos modificados que esta skill não criou (mudanças do usuário ainda não commitadas), PARAR e perguntar o que fazer com eles.
 
