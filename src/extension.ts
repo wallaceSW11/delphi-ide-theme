@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { PascalSemanticTokensProvider } from './semanticTokens';
 import { getThemeConfig } from './config';
+import { registerSelectionTextColor } from './selectionTextColor';
 
 const darkThemeSelector = '[Delphi IDE Dark]';
 
@@ -66,6 +67,7 @@ export function activate(context: vscode.ExtensionContext): void {
     );
 
     applyCustomizations();
+    registerSelectionTextColor(context);
 
     context.subscriptions.push(
         vscode.workspace.onDidChangeConfiguration(e => {
